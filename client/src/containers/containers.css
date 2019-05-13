@@ -1,0 +1,125 @@
+
+#title {
+    background-image: url('../pic/polaris2.png');
+    background-size: 100% 100%;
+    width: 80vh;
+    height:20vh;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#about {
+    font-size: 1.3vw;
+}
+
+.panel {
+    padding-top: 8vh;
+    background-image: url('../pic/night.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    color: azure;
+    text-align: center;
+}
+
+.panelTitle {
+    position: relative;
+    margin-top: 4vh;
+    display: inline-block;
+    font-size: 4vw;
+}
+
+/* MEMBERS */
+
+#group {
+    position: absolute;
+    left: 25vw;
+    width: 50vw;
+    height: 38vw;
+}
+
+.mem {
+    /* border: solid red 2px; */
+    border-radius: 100%;
+    position: absolute;
+    width: 7vw;
+    height: 7vw;   
+    z-index: 98; 
+}
+
+#tenor {
+    left: 34vw;
+    margin-top: 4vw;
+}
+
+#tenor:hover ~ #t_tenor {
+    visibility: visible;
+}
+
+#sop {
+    left: 39vw;
+    margin-top: 12vw;
+}
+
+#sop:hover ~ #t_sop {
+    visibility: visible;
+}
+
+#bass {
+    width: 5.5vw;
+    height: 5.5vw;
+    left: 44vw;
+    margin-top: 7vw;
+}
+
+#bass:hover ~ #t_bass {
+    visibility: visible;
+}
+
+#mezzo {
+    left: 51vw;
+    margin-top: 14vw;
+}
+
+#mezzo:hover ~ #t_mezzo {
+    visibility: visible;
+}
+
+#vp {
+    width: 6vw;
+    height: 6vw;
+    left:53vw;
+    margin-top: 7.5vw;
+}
+
+#vp:hover ~ #t_vp {
+    visibility: visible;
+}
+
+#alto {
+    left: 62vw;
+    margin-top: 5vw;
+}
+
+#alto:hover ~ #t_alto {
+    visibility: visible;
+}
+
+.descr {
+    border-radius: 10px; 
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 6vh;   
+    z-index: 98; 
+    left: 40vw;
+    margin-top: 60vh;
+    align-content: center;
+    font-size: 3vh;
+    padding-top: 1.5vh;
+    visibility: hidden;
+}

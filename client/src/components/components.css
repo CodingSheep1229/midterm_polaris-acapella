@@ -1,0 +1,54 @@
+#ris {
+    color: black;
+    background-color: #F90;
+    border: solid;
+    border-radius: 5px;
+    border-color: #F90;
+    font-size: 6vh;
+}
+
+#pola {
+    font-size: 6vh;
+    color: white;
+}
+
+#logo {
+    margin-left: 2vh;
+    /* margin-right: 2vh;  */
+    height: 4vh;
+}
+
+#header {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    vertical-align: middle;
+    text-align: justify;
+    z-index: 99;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.Navs {
+    display: inline-block;
+    color: white;
+
+    flex-wrap: wrap;
+}
+
+.Button {
+    font-size: 4vh;
+    margin-left: 6vw;
+    margin-right: 0vh;
+    text-decoration: none;
+    padding: 0.25vw;
+}
+
+.Button:hover {
+    background-color: #AAAAAA;
+    border-radius: 5px;
+}
