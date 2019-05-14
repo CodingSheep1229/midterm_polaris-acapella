@@ -6,8 +6,7 @@
   "scripts": {
     "start": "concurrently \"cd backend && nodemon server.js\" \"cd client && npm start\"",
     "build-client": "cd client && npm run build && cd ..",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false concurrently \"cd backend && nodemon server.js\" \"cd client && npm start\""
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
