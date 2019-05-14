@@ -5,20 +5,22 @@ import About from './containers/about';
 import Members from './containers/members';
 import Shows from './containers/shows';
 import Gallery from './containers/gallery';
-import Contact from './containers/contact';
+import Listen from './containers/listen';
+import Footer from './components/footer';
 import './App.css';
 
 
 function App() {
     return (
-        <div>
+        <div id='bod'>
             <Header />
             <Home />
             <About />
             <Members />
             <Shows />
             <Gallery />
-            <Contact />
+            <Listen />
+            <Footer />
         </div>
     );
 }

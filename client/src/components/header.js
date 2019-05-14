@@ -14,7 +14,7 @@ class Header extends Component {
             <AnchorLink className='Navs Button' href='#members'>MEMBERS</AnchorLink>
             <AnchorLink className='Navs Button' href='#shows'>SHOWS</AnchorLink>
             <AnchorLink className='Navs Button' href='#gallery'>GALLERY</AnchorLink>
-            <AnchorLink className='Navs Button' href='#contact'>CONTACT</AnchorLink>
+            <AnchorLink className='Navs Button' href='#listen'>LISTEN</AnchorLink>
         </div>
         );
     }

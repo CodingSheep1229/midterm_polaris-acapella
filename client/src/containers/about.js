@@ -15,7 +15,7 @@ class About extends Component {
           .then(res => this.setState({ data: res.data[0] }));
     };
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         return(
             <div id='about' className='panel'>
                 <div className='panelTitle'>ABOUT</div>

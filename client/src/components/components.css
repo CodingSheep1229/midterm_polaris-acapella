@@ -24,14 +24,26 @@
     vertical-align: middle;
     text-align: justify;
     z-index: 99;
+    top: 0;
+}
+
+#footer {
+    z-index: 99;
+    top: 90vh;
+    color: white;
+    height: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 3vh;
 }
 
 .sticky {
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: black;
 }
+
+
 
 .Navs {
     display: inline-block;
@@ -51,4 +63,6 @@
 .Button:hover {
     background-color: #AAAAAA;
     border-radius: 5px;
+    text-decoration: none;
+    color:black;
 }

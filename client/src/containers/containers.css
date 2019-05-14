@@ -123,3 +123,24 @@
     padding-top: 1.5vh;
     visibility: hidden;
 }
+
+#myCarousel {
+    width: 100%;
+    height: 80%;
+}
+
+.slide {
+    height: 40vw;
+    width: 60vw;
+}
+
+.vid {
+    display: inline-block;
+    width: 50vw;
+    padding: 2vw;
+    height: 35vw;
+}
+
+#listen {
+    height:auto;
+}

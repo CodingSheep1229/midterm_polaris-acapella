@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const Shows = require("./models/shows");
 const About = require("./models/about");
+const Video = require('./models/video');
 
 const API_PORT = 3001;
 const app = express();
@@ -44,7 +45,15 @@ router.get("/getShows", (req, res) => {
 
 router.get("/getAbout", (req, res) => {
     About.find((err, data) => {
-        console.log(data);
+        // console.log(data);
+        if (err) return res.json({ success: false, error: err });
+        return res.json({ success: true, data: data });
+    });
+});
+
+router.get("/getVideos", (req, res) => {
+    Video.find((err, data) => {
+        // console.log(data);
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });
     });
