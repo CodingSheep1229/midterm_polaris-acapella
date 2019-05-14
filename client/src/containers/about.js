@@ -18,7 +18,7 @@ class About extends Component {
         // console.log(this.state);
         return(
             <div id='about' className='panel'>
-                <div className='panelTitle'>ABOUT</div>
+                <div className='panelTitle'>READ ABOUT US</div>
                 <div dangerouslySetInnerHTML={{__html: this.state.data.content}}></div>
             </div>
         );

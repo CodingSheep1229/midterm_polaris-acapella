@@ -5,7 +5,7 @@ class Shows extends Component {
     render() {
         return(
         <div id='shows' className='panel'>
-            <div className='panelTitle'>SHOWS</div>
+            <div className='panelTitle'>COME TO OUR SHOWS</div>
         </div>
         );
     }

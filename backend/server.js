@@ -6,11 +6,12 @@ const logger = require("morgan");
 const Shows = require("./models/shows");
 const About = require("./models/about");
 const Video = require('./models/video');
+const Member = require('./models/member');
 
 const API_PORT = 3001;
 const app = express();
-// app.use(cors());
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(cors());
+// app.use(express.static(path.join(__dirname, "client/build")));
 const router = express.Router();
 
 // this is our MongoDB database
@@ -54,6 +55,14 @@ router.get("/getAbout", (req, res) => {
 
 router.get("/getVideos", (req, res) => {
     Video.find((err, data) => {
+        // console.log(data);
+        if (err) return res.json({ success: false, error: err });
+        return res.json({ success: true, data: data });
+    });
+});
+
+router.get("/getMembers", (req, res) => {
+    Member.find((err, data) => {
         // console.log(data);
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });

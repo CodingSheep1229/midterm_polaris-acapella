@@ -1,16 +1,3 @@
-#ris {
-    color: black;
-    background-color: #F90;
-    border: solid;
-    border-radius: 5px;
-    border-color: #F90;
-    font-size: 6vh;
-}
-
-#pola {
-    font-size: 6vh;
-    color: white;
-}
 
 #logo {
     margin-left: 2vh;
@@ -19,21 +6,23 @@
 }
 
 #header {
-    padding-top: 1vh;
+    padding-top: 0.5vh;
     padding-bottom: 1vh;
     vertical-align: middle;
     text-align: justify;
     z-index: 99;
     top: 0;
+    height: 7vh;
 }
 
 #footer {
     z-index: 99;
-    top: 90vh;
+    top: 94vh;
     color: white;
-    height: 10vh;
-    padding-top: 2vh;
+    height: 6vh;
+    padding-top: 0.5vh;
     padding-bottom: 2vh;
+    padding-left: 2vw; 
     font-size: 3vh;
 }
 
@@ -48,7 +37,6 @@
 .Navs {
     display: inline-block;
     color: white;
-
     flex-wrap: wrap;
 }
 
@@ -57,7 +45,9 @@
     margin-left: 6vw;
     margin-right: 0vh;
     text-decoration: none;
-    padding: 0.25vw;
+    padding: 0.2vw;
+    font-family: MostlyMono;
+    height: 5.5vh;
 }
 
 .Button:hover {
@@ -66,3 +56,16 @@
     text-decoration: none;
     color:black;
 }
+
+#info {
+    position: absolute;
+    right: 0vw;
+}
+
+.footerdiv {
+    font-size: 2vw;
+    display: inline-block;
+    font-family: MostlyMono;
+    margin-right: 2vw;
+}
+

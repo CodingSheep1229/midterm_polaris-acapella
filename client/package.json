@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
     "mdbootstrap": "^4.8.0",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
