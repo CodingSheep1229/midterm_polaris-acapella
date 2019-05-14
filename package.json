@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"cd backend && nodemon server.js\" \"cd client && npm start\"",
     "build-client": "cd client && npm run build && cd ..",
-    "heroku-postbuild": "cd backend && npm install && cd ../client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd backend && npm install && cd ../client && npm install --only=dev && npm install && npm run build --disableHostCheck"
   },
   "keywords": [],
   "author": "",
