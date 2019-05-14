@@ -4,7 +4,6 @@ var cors = require("cors");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const Shows = require("./models/shows");
-const About = require("./models/about");
 const Video = require('./models/video');
 const Member = require('./models/member');
 var path = require('path');
@@ -41,14 +40,6 @@ app.use(logger("dev"));
 
 router.get("/getShows", (req, res) => {
     Shows.find((err, data) => {
-        if (err) return res.json({ success: false, error: err });
-        return res.json({ success: true, data: data });
-    });
-});
-
-router.get("/getAbout", (req, res) => {
-    About.find((err, data) => {
-        // console.log(data);
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });
     });
