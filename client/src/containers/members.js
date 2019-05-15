@@ -9,7 +9,7 @@ class Members extends Component {
         this.getDataFromDb();
     }
     getDataFromDb = () => {
-        fetch("http://0.0.0.0:3001/api/getMembers")
+        fetch("//0.0.0.0:3001/api/getMembers")
           .then(data => {return data.json()})
           .then(res => this.setState({ data: res.data }));
     };
