@@ -4,10 +4,6 @@ import meteor from '../pic/shooting-star.svg';
 
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
     shootingStar(dir) {
         setInterval(function(){
           var yAxis = Math.floor(Math.random() * 40) + 1;
@@ -28,7 +24,7 @@ class Home extends Component {
         return(
         <div id='home' className='panel'>
             <div id='title'></div>
-            <figure class="shooting-star" id="shooting-star">
+            <figure className="shooting-star" id="shooting-star">
                 <img src={meteor} alt="shooting star"/>
             </figure>
         </div>
