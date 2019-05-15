@@ -7,7 +7,6 @@ class Header extends Component {
     render() {
         return(
         <div id='header' className='sticky'>
-            {/* <span className='Navs' id='logo'><span id='pola'>Pola</span><span id='ris'>ris</span></span> */}
             <img id='logo' src= {logo_small} alt='logo'/>
             <AnchorLink className='Navs Button' href='#home'>HOME</AnchorLink>
             <AnchorLink className='Navs Button' href='#about'>ABOUT</AnchorLink>
