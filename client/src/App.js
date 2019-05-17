@@ -15,10 +15,15 @@ function App() {
         <div id='bod'>
             <Header />
             <Home />
+            <></>
             <About />
+            <></>
             <Members />
+            <></>
             <Shows />
+            <></>
             <Gallery />
+            <></>
             <Listen />
             <Footer />
         </div>
