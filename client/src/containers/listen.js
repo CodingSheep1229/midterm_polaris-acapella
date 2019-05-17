@@ -9,7 +9,7 @@ class Listen extends Component {
         this.getDataFromDb();
     }
     getDataFromDb = () => {
-        fetch("//0.0.0.0:3001/api/getVideos")
+        fetch("/api/getVideos")
           .then(data => {return data.json()})
           .then(res => this.setState({ data: res.data }));
     };

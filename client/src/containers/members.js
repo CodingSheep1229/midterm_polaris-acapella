@@ -9,7 +9,7 @@ class Members extends Component {
         this.getDataFromDb();
     }
     getDataFromDb = () => {
-        fetch("//0.0.0.0:3001/api/getMembers")
+        fetch("/api/getMembers")
           .then(data => {return data.json()})
           .then(res => this.setState({ data: res.data }));
     };
@@ -24,7 +24,7 @@ class Members extends Component {
                     this.state.data.map((e,idx) =>
                     <div key={idx}>
                         <div className='mem' id={e.id}></div>
-                        <div className='descr' id={'t_'+e.id}>{e.name}:<p dangerouslySetInnerHTML={{__html:e.description}}></p></div>
+                        <div className='descr' id={'t_'+e.id}>{e.name}:{e.description.split('<br/>').map((ee,idxx)=><p key={idxx}>{ee}</p>)}</div>
                     </div>)
                 }
             </div>

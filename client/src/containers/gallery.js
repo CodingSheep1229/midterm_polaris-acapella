@@ -9,7 +9,7 @@ class Gallery extends Component {
         this.getDataFromDb();
     }
     getDataFromDb = () => {
-        fetch("//0.0.0.0:3001/api/getPhotos")
+        fetch("/api/getPhotos")
           .then(data => {return data.json()})
           .then(res => this.setState({ data: res.data }));
     };
