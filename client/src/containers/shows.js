@@ -18,10 +18,10 @@ class Shows extends Component {
             <div className='panelTitle'>COME TO OUR SHOWS</div>
             <br/>
             <table>
+                <tbody>
                 <tr><td>Name</td><td>Time</td><td>Place</td></tr>
                 {this.state.data.map((e,idx)=><tr key={idx}><td>{e.name}</td><td>{e.time}</td><td>{e.place}</td></tr>)}
-
-
+                </tbody>
             </table>
         </div>
         );
