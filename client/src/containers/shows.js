@@ -20,7 +20,7 @@ class Shows extends Component {
             <table>
                 <tbody>
                 <tr><td>Name</td><td>Time</td><td>Place</td></tr>
-                {this.state.data.map((e,idx)=><tr key={idx}><td>{e.name}</td><td>{e.time}</td><td>{e.place}</td></tr>)}
+                {this.state.data.map((e,idx)=><tr key={idx}><td><a href={e.url} className='show_det'>{e.name}</a></td><td>{e.time}</td><td>{e.place}</td></tr>)}
                 </tbody>
             </table>
         </div>

@@ -11,11 +11,6 @@
     border-radius: 20px;
 }
 
-#about {
-    font-size: 1.7vw;
-    font-family: SentyPea;
-}
-
 .panel {
     padding-top: 4vh;
     background-image: url('../pic/night.jpg');
@@ -32,6 +27,11 @@
     height: auto;
     min-height: 100vh;
     padding-bottom: 3vh;
+    font-size: 1.7vw;
+    font-family: myfont;
+    /* background-image: None; */
+    /* background-color: #050413; */
+    /* color: #B9B8BC; */
 
 }
 
@@ -40,7 +40,7 @@
     margin-top: 4vh;
     display: inline-block;
     font-size: 4vw;
-    font-family: MostlyMono;
+    font-family: myfont;
     text-decoration: bold;
 }
 
@@ -136,8 +136,10 @@
     font-size: 2.6vh;
     padding: 1vh;
     visibility: hidden;
-    font-family: SentyPea
+    font-family: myfont;
 }
+
+/* GALLERY */
 
 #myCarousel {
     width: 100%;
@@ -148,6 +150,8 @@
     height: 34vw;
     width: 45vw;
 }
+
+/* LISTEN */
 
 .vid {
     display: inline-block;
@@ -163,8 +167,40 @@
 }
 
 #word {
-    font-family: SentyPea;
+    font-family: myfont;
     font-size:1.5vw;
+}
+
+/* SHOWS */
+
+table {
+    display: inline-block;
+    font-size: 2vw;
+    font-family: myfont;
+}
+td {
+    width: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+tr:nth-child(1) {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+.show_det {
+    text-decoration: None;
+    color:white;
+}
+
+.show_det:hover {
+    /* text-decoration: None; */
+    color:white;
 }
 
 
@@ -200,22 +236,4 @@
       opacity:0;
       animation: shooting-star 6s 5s infinite ease-out;
       animation-delay:0s;
-}
-
-table {
-    display: inline-block;
-    font-size: 2vw;
-    font-family: MostlyMono;
-}
-td {
-    width: 15vw;
-}
-
-tr:nth-child(1) {
-    background-color: #f2f2f2;
-    color: black;
-}
-
-table, th, td {
-    border: 1px solid white;
 }

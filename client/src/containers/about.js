@@ -15,7 +15,7 @@ class About extends Component {
                 <p>你總能在小熊的尾尖上找到我們</p>
                 <p>我們有花俏的名字</p>
                 <p>但</p>
-                <p>姑且叫我們Polaris</p>
+                <p>姑且叫我們 Polaris</p>
                 <br/>
                 <p>宇宙亙古樂音</p>
                 <p>我們高唱</p>

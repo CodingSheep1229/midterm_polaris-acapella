@@ -46,7 +46,7 @@
     margin-right: 0vh;
     text-decoration: none;
     padding: 0.2vw;
-    font-family: MostlyMono;
+    font-family: myfont;
     height: 5.5vh;
 }
 
@@ -65,7 +65,7 @@
 .footerdiv {
     font-size: 2vw;
     display: inline-block;
-    font-family: MostlyMono;
+    font-family: myfont;
     margin-right: 2vw;
 }
 

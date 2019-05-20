@@ -6,7 +6,8 @@ const ShowsSchema = new Schema(
     id: Number,
     name: String,
     place: String,
-    time: String
+    time: String,
+    url: String,
   },
   { timestamps: true }
 );
