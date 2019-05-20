@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 
 #title {
     background-image: url('../pic/polaris2.png');
