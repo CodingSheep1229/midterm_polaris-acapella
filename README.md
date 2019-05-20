@@ -31,3 +31,4 @@ npm start
 3. 串接後端資料庫部分參考並修改網路上找到的教學文章：https://medium.com/javascript-in-plain-english/full-stack-mongodb-react-node-js-express-js-in-one-simple-app-6cc8ed6de274
 
 ## 心得
+這次期中project中我遇到非常多問題，比如說deploy上heroku時遇到的fetch問題等等的，也讓我學到了查資料的能力．這次前端的部分大部分都是手刻，所以相容性有點差，螢幕比例不一樣有時候會炸版，如果以後再開發類似網頁可能會去找現成響應式網頁模板來進行開發XD
