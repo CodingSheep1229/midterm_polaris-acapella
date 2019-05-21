@@ -14,7 +14,6 @@ class Listen extends Component {
           .then(res => this.setState({ data: res.data }));
     };
     render() {
-        // console.log(this.state);
         return(
         <div id='listen' className='panel'>
             <div className='panelTitle'>LISTEN TO OUR MUSIC</div>

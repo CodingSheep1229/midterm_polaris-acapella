@@ -11,7 +11,6 @@ var path = require('path');
 
 const API_PORT = process.env.PORT || 3001;
 const app = express();
-// app.set('port', port);
 app.use(cors());
 app.use(express.static(path.join(__dirname, "../client/build")));
 const router = express.Router();
@@ -49,7 +48,6 @@ router.get("/getShows", (req, res) => {
 
 router.get("/getVideos", (req, res) => {
     Video.find((err, data) => {
-        // console.log(data);
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });
     });
@@ -57,7 +55,6 @@ router.get("/getVideos", (req, res) => {
 
 router.get("/getMembers", (req, res) => {
     Member.find((err, data) => {
-        // console.log(data);
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });
     });
@@ -65,7 +62,6 @@ router.get("/getMembers", (req, res) => {
 
 router.get("/getPhotos", (req, res) => {
     Photo.find((err, data) => {
-
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: data });
     });

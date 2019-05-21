@@ -33,9 +33,9 @@ body {
     padding-bottom: 3vh;
     font-size: 1.7vw;
     font-family: myfont;
-    /* background-image: None; */
-    /* background-color: #050413; */
-    /* color: #B9B8BC; */
+    background-image: None;
+    background-color: #050413;
+    color: #B9B8BC;
 
 }
 
@@ -203,7 +203,6 @@ table, th, td {
 }
 
 .show_det:hover {
-    /* text-decoration: None; */
     color:white;
 }
 

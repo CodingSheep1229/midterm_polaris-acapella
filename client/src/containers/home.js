@@ -18,7 +18,6 @@ class Home extends Component {
     }
     componentDidMount() {
         this.shootingStar('left');
-        // this.shootingStar('right');
     }
     render() {
         return(
